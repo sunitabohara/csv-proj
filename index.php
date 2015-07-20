@@ -61,8 +61,8 @@ $.get('uploads/final.csv', function(data) {
   var rows = data.split("\n");
   //for (var i = 0; i < rows.length; i++) {
     var header = rows[0].split(",");
-    var newId = parseInt(Id + 1);
-    var cells = rows[Id].split(",");
+    var newId = parseInt( parseInt(Id) + parseInt(1) );
+    var cells = rows[newId].split(",");
     var amount = cells[12];  
     for (var j = 0; j < cells.length; j++) {
       var row = table.insertRow(-1);
