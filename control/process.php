@@ -1,6 +1,6 @@
 
 <?php
-
+class process{
 	// open get data from contracts.csv
 	$contracts = array_map("str_getcsv", file("../uploads/contracts/contracts.csv",FILE_SKIP_EMPTY_LINES));
 	//get column name of contacts.csv
@@ -97,6 +97,6 @@ $data[13] ='';
 	else{
 		echo 'There is some problem';
 	}
-	
+}	
 
 ?>
