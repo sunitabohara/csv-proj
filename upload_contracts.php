@@ -4,7 +4,7 @@
 <title>File Uploading Form</title>
 </head>
 <body>
-<h3>Upload Contracts.csv:</h3>
+<h3>Upload File :</h3>
 Select a file to upload: <br />
 <form action="control/file_uploader.php" method="post"
                         enctype="multipart/form-data">
